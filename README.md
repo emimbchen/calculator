@@ -5,11 +5,12 @@ Made with jQuery, Node, and Express
 
 ### general set up
 
--[]create 2 inputs
--[]create drop list of 
--[]create submit button
--[]create clear button
--[]set up server
+-[x]source in html
+-[x]create 2 inputs
+-[x]create drop list of 
+-[x]create submit button
+-[x]create clear button
+-[x]set up server
 
 ### standard mode
 
@@ -34,7 +35,7 @@ Made with jQuery, Node, and Express
 -[]convert input fields to buttons (like a calc)
 -[]add number data to each button
 
-###pro mode:
+### pro mode:
 
 -[]keep record of math operations on the server
 -[]push each new calc into array
