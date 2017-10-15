@@ -27,15 +27,15 @@ Made with jQuery, Node, and Express
 -[X] build subtract mod
 -[X] build multiply mod
 -[X] build division mod
--[] Send back response
--[] post response on DOM
+-[X] Send back response
+-[X] post response on DOM
 
 ### hard mode:
 
--[] convert input fields to buttons (like a calc)
--[] add number data to each button
+-[X] convert input fields to buttons (like a calc)
+-[X] add number data to each button
 
 ### pro mode:
 
 -[] keep record of math operations on the server
--[] push each new calc into array
+-[X] push each new calc into array

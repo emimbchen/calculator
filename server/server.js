@@ -18,11 +18,12 @@ app.listen(port, function(){
 });
 
 app.post('/userinput', function(req, res){
-    data.push(req.body);
     numOne = req.body.numberOne;
     numTwo = req.body.numberTwo;
     operator= req.body.operator;
     result = calculation(numOne, numTwo, operator);
+    req.body.results = result;
+    data.push(req.body);
     res.sendStatus(200);
 });
 
@@ -31,7 +32,8 @@ app.get('/userinput', sendSubmit);
 function sendSubmit(req, res){
     console.log('request for response made', calculation(numOne, numTwo, operator) );
     res.send({
-        result: result
+        result: result,
+        history: data
     });
 }
 
