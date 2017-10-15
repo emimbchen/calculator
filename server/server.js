@@ -5,6 +5,10 @@ var app = express();
 var port = 5000;
 
 var data = [];
+var result;
+var numOne;
+var numTwo;
+var operator;
 
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.static('server/public'));
@@ -15,9 +19,20 @@ app.listen(port, function(){
 
 app.post('/userinput', function(req, res){
     data.push(req.body);
-    var numOne = req.body.numberOne;
-    var numTwo = req.body.numberTwo;
-    var operator= req.body.operator;
+    numOne = req.body.numberOne;
+    numTwo = req.body.numberTwo;
+    operator= req.body.operator;
+    result = calculation(numOne, numTwo, operator);
     res.sendStatus(200);
 });
+
+app.get('/userinput', sendSubmit);
+
+function sendSubmit(req, res){
+    console.log('request for response made', calculation(numOne, numTwo, operator) );
+    res.send({
+        result: result
+    });
+}
+
 

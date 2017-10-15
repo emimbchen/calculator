@@ -1,18 +1,22 @@
 function calculator( numone, numtwo, operator) {
     var result= 0;
-    if(operator === "add"){
-        result = numone + numtwo;
+
+    numone = parseInt(numone);
+    numtwo = parseInt(numtwo);
+
+    if(operator === "+"){
+        result = numone+numtwo;
     }
-    else if (operator === "subtract"){
-        result = numone - numtwo;
+    else if (operator === "-"){
+        result = numone-numtwo;
     }
-    else if (operator === "mult"){
-        result = numone * numtwo;
+    else if (operator === "*"){
+        result = numone*numtwo;
     }
-    else if (operator === "divide"){
-        result = numone / numtwo;
+    else if (operator === "/"){
+        result = numone/numtwo;
     }
-    return result;
+    return (result).toFixed(2);
 }
 
 module.exports = calculator;

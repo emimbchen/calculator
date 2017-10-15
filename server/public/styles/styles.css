@@ -1,3 +1,57 @@
-container {
-    background-color: plum;
+h1 {
+    text-align: center;
+    margin: 12px;
 }
+.container {
+    border-color: darkslategray;
+    border-style: solid;
+    border-radius: 10px;
+    background-color: lightgray;
+    width: 310px;
+    margin: 15px auto;
+    padding: 7px 0px;
+}
+ p {
+     background-color: gainsboro;
+     height: 30px;
+     width: 150px;
+     margin: 7px auto;
+     border-style: solid;
+     border-color: darkslategray;
+ }
+
+ .numbers {
+    display: flex;
+    flex-wrap: wrap;
+    flex-flow: center;
+    justify-content: space-around;
+    margin: 0 auto;
+    width: 200px;
+ }
+.operator {
+    display: flex;
+    flex-wrap: wrap;
+    flex-flow: center;
+    justify-content: space-around;
+    margin: 0 auto;
+    width: 300px;   
+}
+
+.controls{
+    display: flex;
+    flex-wrap: wrap;
+    flex-flow: center;
+    justify-content: space-around;
+    margin: 0 auto;
+    width: 300px;
+}
+
+ button {
+    height: 60px;
+    width: 60px;
+    margin: 2px;
+    border-radius: 10px;
+    
+
+ }
+
