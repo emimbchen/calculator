@@ -37,5 +37,5 @@ Made with jQuery, Node, and Express
 
 ### pro mode:
 
--[] keep record of math operations on the server
+-[X] keep record of math operations on the server
 -[X] push each new calc into array
